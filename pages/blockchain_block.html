@@ -95,9 +95,9 @@
 				updateText('block.currentTxsMedian', block.sizeMedian);
 				updateText('block.effectiveTxsMedian', block.effectiveSizeMedian);
 				updateText('block.rewardPenalty', block.penalty*100 + "%");
-				updateText('block.baseReward', getReadableCoins(block.baseReward*1000));
+				updateText('block.baseReward', getReadableCoins(block.baseReward));
 				updateText('block.transactionsFee', getReadableCoins(block.totalFeeAmount));
-				updateText('block.reward', getReadableCoins(block.reward*1000));
+				updateText('block.reward', getReadableCoins(block.reward));
 				updateText('block.totalCoins', getReadableCoins(block.alreadyGeneratedCoins));
 				updateText('block.totalTransactions', block.alreadyGeneratedTransactions);
 				renderTransactions(block.transactions);
